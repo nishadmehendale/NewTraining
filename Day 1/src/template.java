@@ -1,3 +1,4 @@
+//Template for any program
 import java.util.*;
 class template
 {

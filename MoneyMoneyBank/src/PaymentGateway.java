@@ -1,3 +1,4 @@
+//Class that performs transfer of funds between two accounts 
 public class PaymentGateway {
 	//method to transfer the given amount from the src to target account.
 		public static boolean transfer(Account sender, Account reciever, double amount) 

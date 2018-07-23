@@ -1,30 +1,37 @@
+//Class to Calculate Tax on CTC 
 import java.util.*;
 class CTC
 {
 	public static void main(String args [])
 	{
-		int i;
-		float t=0.0f;
-		Scanner sc = new Scanner(System.in);
+		//Initialization
+		float tax=0.0f,income;
+		
+		//Taking CTC as an input
+		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter inconme out");
-		i = sc.nextInt();
-		if(i<=180000)
+		income = scanner.nextFloat();
+		
+		//Calculation of Tax
+		if(income<=180000)
 		{
-			t=0;
+			tax=0;
 		}
-		else if(i<=300000)
+		else if(income<=300000)
 		{
-			t =(float) 0.1 * i;
+			tax =(float) 0.1 * i;
 		}
-		else if(i<=500000)
+		else if(income<=500000)
 		{
-			t =(float) 0.2 * i;
+			tax =(float) 0.2 * i;
 		}
-		else if(i>500000)
+		else if(income>500000)
 		{
-			t =(float) 0.3 * i;
+			tax =(float) 0.3 * i;
 		}
-		System.out.println(t);
+		
+		//Displaying Tax
+		System.out.println(tax);
 	
 	}
 }

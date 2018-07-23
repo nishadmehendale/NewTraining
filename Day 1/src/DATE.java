@@ -1,12 +1,15 @@
+//Class DATE to Print Date DD/MonthName/YYYY format
 import java.util.*;
 class DATE
 {
 	public static void main(String args [])
 	{
+		//Accepting input
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the date as DD,MM,YYYY");
-		String str;
-		str = sc.nextLine();
+		String date = sc.nextLine();
+		
+		//Processing input string
 		String[] date = str.split(",");
 		switch(date[1])
 		{

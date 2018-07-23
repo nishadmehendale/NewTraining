@@ -1,8 +1,10 @@
+//Class to sort elements of an array
 import java.util.*;
 class sort
 {
 	public static void main(String args [])
 	{
+		//Accepting elements of an array
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the elements of array");
 		int arr[] = new int [15];
@@ -11,6 +13,8 @@ class sort
 		{
 			arr[i]=sc.nextInt();
 		}
+		
+		//Sorting array
 		System.out.println("Sorted Array is");
 		for(int i=0;i<15;i++)
 		{
@@ -24,6 +28,8 @@ class sort
 					}
 			}
 		}
+		
+		//Displaying sorted array
 		for(int i=0;i<15;i++)
 		{
 			System.out.println(arr[i]);
